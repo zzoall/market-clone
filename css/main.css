@@ -51,9 +51,15 @@ main {
     position: fixed;
     bottom: 160px;
     right: 30px;
-    background-color: orange;
+    background-color: var(--button-primary);
     color: white;
     padding: 10px 20px 10px 20px;
     border-radius: 25px;
     box-shadow: 3px 3px 3px rgb(217, 214, 214);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+    background-color: var(--button-hover);
 }
