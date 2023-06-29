@@ -10,7 +10,7 @@ font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretenda
 }
 
 .media-info-msg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -19,13 +19,12 @@ font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretenda
     justify-content: center;
     align-items: center;
     background-color: salmon;
-    opacity: 0;
 }
 
-/* 최소너비가 430px , 평소엔 투명도 0 이다가 430보다 작아지면 투명도 1 */
-@media screen and (min-width: 430px) {
+
+@media screen and (min-width: 500px) {
     .media-info-msg {
-        opacity: 1;
+        display: none;
     }
 }
 
